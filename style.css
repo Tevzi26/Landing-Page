@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;800&display=swap');
 
 * {
-    font-family: 'Inconsolata', monospace, sans-serif;
+    font-family: 'Inconsolata',monospace, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /*Nav bar*/
@@ -19,6 +20,9 @@ header {
     margin-right: auto;
     font-size: 24px;
     color: #F9FAF8;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
 }
 
 .navbar {
@@ -71,8 +75,85 @@ header {
 }
 
 .image img{
-    width: 600px;
+    width: 120%;
     height: auto;
 }
 
+.title {
+    margin: 35px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+    color: #1F2937;
+}
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.item p {
+    text-align: center;
+    margin: 10px 20%;
+}
+
+.item img {
+    width: 100px;
+    height: auto;
+    border-radius: 15px;
+    border: solid #3882F6 3px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    padding: 80px 0;
+}
+
+.quote h2 {
+    font-style: italic;
+    font-weight: lighter;
+    margin: 10px 25%;
+    
+}
+
+.quote h3 {
+    text-align: end;
+    margin: 10px 25%;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin: 15vh 20vw;
+    padding: 5vh 0;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 10px;
+}
+
+.signup div button {
+    color: #F9FAF8;
+    background-color: #3882F6;
+    font-weight: 800;
+    padding: 5px 20px;
+    border: solid 2px #F9FAF8;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    text-align: center;
+    padding: 30px;
+}
